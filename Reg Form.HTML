@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h1>                                   Student Registration Form</h1></pre>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="phone number">Phone Number:</label>
+        <input type="tel" id="phone number" name="phone number" required><br><br>
+        <hr>
+        <h2>Gender</h2>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" required><br><br>
+    </form>
+    <hr>
+    <h2>Course Selection</h2>
+    <label for="course">Select Course:</label>
+    <select id="course" name="course" required>
+        <option value="">--Please choose an option--</option>
+        <option value="computer science">Computer Science</option>
+        <option value="business administration">Business Administration</option>
+        <option value="psychology">Psychology</option>
+        <option value="engineering">Engineering</option>
+    </select><br><br>
+    <hr>
+    <h2>Hobbies</h2>
+    <label for="hobby1">Reading</label>
+    <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+    <label for="hobby2">Traveling</label>
+    <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+    <label for="hobby3">Cooking</label>
+    <input type="checkbox" id="hobby3" name="hobbies" value="cooking">
+    <label for="hobby4">Sports</label>
+    <input type="checkbox" id="hobby4" name="hobbies" value="sports"><br><br>
+    <hr>
+    <h2>Date of Birth</h2>
+    <label for="dob">Select Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <hr>
+    <h2>Addresses</h2>
+    <label for="address1">Permanent Address:</label><br>
+    <textarea id="address1" name="address1" rows="4" cols="50" required></textarea><br><br>
+    <label for="address2">Current Address:</label><br>
+    <textarea id="address2" name="address2" rows="4" cols="50" required></textarea><br><br>
+    <hr>
+    <h2>Upload photo</h2>
+    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+    <hr>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</body>
+</html>
